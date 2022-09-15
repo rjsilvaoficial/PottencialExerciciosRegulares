@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ConhecendoAsEstruturasDeRepeticao/1.0.0": {
+        "runtime": {
+          "ConhecendoAsEstruturasDeRepeticao.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConhecendoAsEstruturasDeRepeticao/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
