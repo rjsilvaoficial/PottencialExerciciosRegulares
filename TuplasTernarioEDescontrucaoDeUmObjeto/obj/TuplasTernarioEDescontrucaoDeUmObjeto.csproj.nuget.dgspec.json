@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\PottencialExerciciosRegulares\\ConhecendoAsEstruturasDeRepeticao\\ConhecendoAsEstruturasDeRepeticao.csproj": {}
+    "C:\\Projetos\\PottencialExerciciosRegulares\\TuplasTernarioEDescontrucaoDeUmObjeto\\TuplasTernarioEDescontrucaoDeUmObjeto.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\PottencialExerciciosRegulares\\ConhecendoAsEstruturasDeRepeticao\\ConhecendoAsEstruturasDeRepeticao.csproj": {
+    "C:\\Projetos\\PottencialExerciciosRegulares\\TuplasTernarioEDescontrucaoDeUmObjeto\\TuplasTernarioEDescontrucaoDeUmObjeto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\PottencialExerciciosRegulares\\ConhecendoAsEstruturasDeRepeticao\\ConhecendoAsEstruturasDeRepeticao.csproj",
-        "projectName": "ConhecendoAsEstruturasDeRepeticao",
-        "projectPath": "C:\\Projetos\\PottencialExerciciosRegulares\\ConhecendoAsEstruturasDeRepeticao\\ConhecendoAsEstruturasDeRepeticao.csproj",
+        "projectUniqueName": "C:\\Projetos\\PottencialExerciciosRegulares\\TuplasTernarioEDescontrucaoDeUmObjeto\\TuplasTernarioEDescontrucaoDeUmObjeto.csproj",
+        "projectName": "TuplasTernarioEDescontrucaoDeUmObjeto",
+        "projectPath": "C:\\Projetos\\PottencialExerciciosRegulares\\TuplasTernarioEDescontrucaoDeUmObjeto\\TuplasTernarioEDescontrucaoDeUmObjeto.csproj",
         "packagesPath": "C:\\Users\\robso\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\PottencialExerciciosRegulares\\ConhecendoAsEstruturasDeRepeticao\\obj\\",
+        "outputPath": "C:\\Projetos\\PottencialExerciciosRegulares\\TuplasTernarioEDescontrucaoDeUmObjeto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
