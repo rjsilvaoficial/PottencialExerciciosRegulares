@@ -1,0 +1,146 @@
+Conhecendo as estruturas de repetição
+
+Este projeto é dedicado ao capítulo de estruturas de repetição no bootcamp da DIO executado em parceria com a Pottencial.
+
+Durante as explicações sempre certeiras do nosso senior sempre de plantão Leonardo Buta, tivemos a oportunidade de aprender como usar os sempre tão úteis laços de repetição e as peculiaridades presentes em cada um deles...
+
+Não acredito que haja muito o que acrescentar, então passei mais expressar o que entendi do conteúdo passado e algumas percepções adicionais que obtive durante meus testes e que eventualmente podem ser úteis a quem estiver interessado no tema:
+
+Bora pros laços:
+
+1 - for : É interessante aplicá-lo quando fazemos alguma idéia da quantidade de vezes que ele deve ser executado (como por exemplo ao calcular a tabuada).
+
+Ponto interessante sobre esse laço (que em caso de se trabalhar com contadores em outros laços também pode ser aplicado) é que podemos especificar como se dá o incremento do laço
+
+Exemplo:
+
+        public static void CalcularTabuadaUsandoForComSalto()
+        {
+            Console.WriteLine("Você selecionou tabuada com salto!");
+            Console.WriteLine();
+            Console.Write("Digite o número do qual deseja saber a tabuada sem multiplicação pelos pares: ");
+            int input = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+            for (int i = 1; i <= 10; i+=2)
+            {
+                Console.WriteLine($"{input} x {i} = {input * i}");
+            }
+            Console.ReadKey();
+            Console.Clear();
+        }
+
+O método acima, gera como saída no console, a tabuada do número inserido, porém ignora os pares.
+
+Um outro jeito de se fazer isso, seria:
+
+        public static void CalcularTabuadaUsandoForComSalto()
+        {
+            Console.WriteLine("Você selecionou tabuada com salto!");
+            Console.WriteLine();
+            Console.Write("Digite o número do qual deseja saber a tabuada sem multiplicação pelos pares: ");
+            int input = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+            for (int i = 1; i <= 10; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    continue;
+                }
+                Console.WriteLine($"{input} x {i} = {input * i}");
+
+            }
+            Console.ReadKey();
+            Console.Clear();
+        }
+
+O que há de interessante aqui é o if contendo a palavra chave continue, apesar dela não ter sido mencionada no módulo, ela retorna a chamada (o andamento do código) ao laço, sempre que i % 2 == 0 o que vem abaixo é ignorado e o for é chamado sem que o Console.WriteLine() contendo os resultados da multiplicação por número par seja executado.
+
+Mencionei isso aqui, pois constrata e serve para esclarecer um pouco mais a função da palavra chave break, ela literalmente para a execução do laço atual, diferente de continue que apenas ignora o código abaixo dela e exclusivamente na iteração atual, para o break não importa qual a iteração onde estamos (e claro isso depende de como está a implementação do código), ela vai tirar você de dentro do laço!
+
+Sobre o for, ainda acho interessante acrescentar com relação a sua atuação sobre arrays e quaisquer espécies de listas enumeráveis...
+
+Enumerações e arrays por padrão, tem seu índice inicial definido como índice 0, ou seja, o primeiro item de um array, não estará em meuArray[1], ele é direcionado para o meuArray[0], então quando formos interagir com eles usando um for, o ideal para uma implementação que acesse todos os itens de um array e os mostre, é algo como:
+
+            for (int i = 0; i < meuArray.Length; i++)
+            {
+                Console.WriteLine($"{meuArray[i]}");
+            }
+
+2 - while : Pessoalmente eu o julgo mais interessante para implementações que não consideram uma quantidade pré-definida de repetições, como ilustrado na aula, ele pode ser uma ótima saída para um menu por exemplo:
+
+        public static void ApresentarInterfaceDeUsuario()
+        {
+            string opcao;
+            bool exibirMenu = true;
+
+            while (exibirMenu)
+            {
+                Console.Clear();
+                Console.WriteLine("Digite a sua opção:");
+                Console.WriteLine();
+                Console.WriteLine("1 - Cadastrar cliente");
+                Console.WriteLine("2 - Buscar cliente");
+                Console.WriteLine("3 - Apagar cliente");
+                Console.WriteLine("4 - Encerrar");
+
+
+                opcao = Console.ReadLine();
+
+                switch (opcao)
+                {
+                    case "1":
+                        Console.WriteLine("Cadastro de cliente");
+                        Console.ReadKey();
+                        break;
+                    case "2":
+                        Console.WriteLine("Busca de cliente");
+                        Console.ReadKey();
+                        break;
+                    case "3":
+                        Console.WriteLine("Apaga cliente");
+                        Console.ReadKey();
+                        break;
+                    case "4":
+                        Console.WriteLine("Encerrar");
+                        exibirMenu = false;
+                        //Environment.Exit(0);
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida");
+                        Console.ReadKey();
+                        break;
+                }
+            }
+        }
+    }
+
+Aqui, é sempre avaliada a condição antes da primeira execução do laço: se neste caso exibirMenu estivesse false, o menu não seria executado, como ele está true o laço é acessado e a execução do programa permanece nele até que esta condição seja alterada! Molezinha vai?
+
+3 - do while :  Esse aqui é uma variação do while, a diferença importante (além da sintaxe é claro) é que ele SEMPRE executará o código entre chaves uma primeira vez, antes de verificar se a execução deve ou não permanecer no laço!
+
+        public static void SomarComDoWhile()
+        {
+            Console.WriteLine("Você selecionou Somar com do while!");
+            Console.WriteLine();
+            Console.Write("Digite um número e aperte enter para acrescentar na soma (0 - para ver o resultado)");
+            Console.WriteLine();
+            int resultado = 0;
+            int numeroInputado = 0;
+            do
+            {
+                numeroInputado = Convert.ToInt32(Console.ReadLine());
+                resultado += numeroInputado;
+
+            }
+            while (numeroInputado != 0);
+
+            Console.WriteLine(resultado);
+            Console.ReadKey();
+        }
+
+Bom, acho que por enquanto é isso! Se achar que conteúdo acrescentou de alguma forma e quiser deixar aquela recomendação de competência em C# no linkedin vou agradecer muito!
+
+linkedin : www.linkedin.com/in/rjsilva-oficial
+github: https://github.com/rjsilvaoficial
+
+
