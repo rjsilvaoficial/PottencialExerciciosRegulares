@@ -12,7 +12,8 @@ namespace TuplasTernarioEDescontrucaoDeUmObjeto
 
             LeituraArquivo myReader = new LeituraArquivo();
 
-            (bool sucesso, string[] linhas,int quantidadeLinhas ) tst = myReader.LerArquivo(@"Arquivos/File1.txt");
+            (bool sucesso, string[] linhas, int quantidadeLinhas) tst = myReader.LerArquivo(@"Arquivos/File1.txt");
+            var (sucesso,linhas,_) = myReader.LerArquivo(@"Arquivos/File1.txt");
 
 
 
@@ -27,7 +28,9 @@ namespace TuplasTernarioEDescontrucaoDeUmObjeto
                 }
             }
 
-            
+            Pessoa pessoa = new Pessoa(1, "João");
+
+            (int id, string nome) = pessoa;
 
 
 
