@@ -1,15 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.2.32526.322
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConhecendoAsEstruturasDeRepeticao", "ConhecendoAsEstruturasDeRepeticao\ConhecendoAsEstruturasDeRepeticao.csproj", "{E3341B85-AC2B-4291-8FED-CC6F466E6117}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManipulandoValoresComCSharp", "ManipulandoValoresComCSharp\ManipulandoValoresComCSharp.csproj", "{90359A7D-73C6-4B98-AE82-00A22AF8FBBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceçõesEColeçõesComCSharp", "ExceçõesEColeçõesComCSharp\ExceçõesEColeçõesComCSharp.csproj", "{580D1C08-4AC0-425A-B8B5-B584E24A8918}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceçõesEColeçõesComCSharp", "ExceçõesEColeçõesComCSharp\ExceçõesEColeçõesComCSharp.csproj", "{580D1C08-4AC0-425A-B8B5-B584E24A8918}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuplasTernarioEDescontrucaoDeUmObjeto", "TuplasTernarioEDescontrucaoDeUmObjeto\TuplasTernarioEDescontrucaoDeUmObjeto.csproj", "{B50BD66B-94B6-4AD6-9B43-2E0A41F41CBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TuplasTernarioEDescontrucaoDeUmObjeto", "TuplasTernarioEDescontrucaoDeUmObjeto\TuplasTernarioEDescontrucaoDeUmObjeto.csproj", "{B50BD66B-94B6-4AD6-9B43-2E0A41F41CBF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafiosDeCodigoIntermediariosCSharp", "DesafiosDeCodigoIntermediariosCSharp\DesafiosDeCodigoIntermediariosCSharp.csproj", "{9A0B2823-E72D-4E52-A2C0-F808D49942EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NugetSerializarEAtributosCSharp", "NugetSerializarEAtributosCSharp\NugetSerializarEAtributosCSharp.csproj", "{A64CAF91-8014-4173-8D99-8E87387421E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TiposEspeciaisNoCSharp", "TiposEspeciaisNoCSharp\TiposEspeciaisNoCSharp.csproj", "{35C9A345-EA00-417B-A819-3A850D9CFFDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioDeCodigoIntermediario", "DesafioDeCodigoIntermediario\DesafioDeCodigoIntermediario.csproj", "{DACBE68D-24A1-48F3-AB10-9FE53019C3ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{B50BD66B-94B6-4AD6-9B43-2E0A41F41CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B50BD66B-94B6-4AD6-9B43-2E0A41F41CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B50BD66B-94B6-4AD6-9B43-2E0A41F41CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A0B2823-E72D-4E52-A2C0-F808D49942EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A0B2823-E72D-4E52-A2C0-F808D49942EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A0B2823-E72D-4E52-A2C0-F808D49942EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A0B2823-E72D-4E52-A2C0-F808D49942EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A64CAF91-8014-4173-8D99-8E87387421E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A64CAF91-8014-4173-8D99-8E87387421E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A64CAF91-8014-4173-8D99-8E87387421E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A64CAF91-8014-4173-8D99-8E87387421E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35C9A345-EA00-417B-A819-3A850D9CFFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C9A345-EA00-417B-A819-3A850D9CFFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C9A345-EA00-417B-A819-3A850D9CFFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C9A345-EA00-417B-A819-3A850D9CFFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACBE68D-24A1-48F3-AB10-9FE53019C3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACBE68D-24A1-48F3-AB10-9FE53019C3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACBE68D-24A1-48F3-AB10-9FE53019C3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACBE68D-24A1-48F3-AB10-9FE53019C3ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
